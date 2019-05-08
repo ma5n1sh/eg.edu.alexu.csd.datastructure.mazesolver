@@ -24,6 +24,16 @@ public class sLinkedList {
             head = w;
         }
     }
+    public sLinkedList copy(){
+        sLinkedList output=new sLinkedList();
+        sNode n=new sNode();
+        n=head;
+        while(n!=null){
+            output.add(n.data);
+            n=n.next;
+        }
+        return output;
+    }
 
     public void add (Object element) {
 
